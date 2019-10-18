@@ -1,0 +1,286 @@
+.minionCard {
+  /* background: #776557; */
+  transition: transform 0.15s;
+  position: relative;
+  width: 35vh;
+  height: 47vh;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  border: 1vh rgb(163, 122, 61);
+  border-style: outset;
+  background-image: radial-gradient(circle, #a87046, #cab09b, #776557);
+  display: inline-flex;
+  flex-shrink:0;
+
+  /* Remove this margin! only for testing */
+  margin-left: 30px;
+  margin-top: 8vh;
+}
+
+.minionCard:hover {
+  background: #6e5c4f;
+}
+
+/* The Minion's Name Banner */
+.MinionName {
+  position: absolute;
+  width: 100%;
+  top: 42%;
+  background: #D4B48F;
+  text-align: center;
+  font-size: 3vh;
+  color: #ffffff;
+  padding: 10px;
+  box-sizing: border-box;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  height: 12%;
+  border-radius: 15%;
+  border-style: double;
+  border: 2vh rgb(163, 122, 61);
+  font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+/* The Minions Portrait */
+.minionPortrait {
+  position: absolute;
+  top: 5px;
+  left: 12%;
+  width: 70%;
+  height: 55%;
+  border: 4px solid #968E86;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* The Minion's Play Cost Orb */
+.minionCost {
+  position: absolute;
+  background: #968E86;
+  border: 4px solid #968E86;
+  border-radius: 100%;
+  bottom: -8%;
+  left: -10%;
+  color: white;
+}
+
+/* The Minions Health Orb */
+.minionHealth {
+  position: absolute;
+  padding: 2.2vh 2.6vh;
+  background: #bc3328;
+  border: 4px solid #968E86;
+  border-radius: 100%;
+  bottom: -6vh;
+  right: -3vh;
+  color: white;
+  font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+
+
+
+
+/* The Minions Strength Orb */
+.minionStrength {
+  position: absolute;
+  border: 2px solid #968E86;
+  border-radius: 100%;
+  bottom: -3vh;
+  right: 9vh;
+  width: 6vh;
+  height: 6vh;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  padding-left: -1vh;
+  background-color: #968E86;
+}
+
+/* The Minions Weakness Orb */
+.minionWeakness {
+  position: absolute;
+  border: 2px solid #968E86;
+  border-radius: 100%;
+  bottom: -3vh;
+  left: 9vh;
+  width: 6vh;
+  height: 6vh;
+  background-size: cover;
+  background-position: center;
+  background-color: #968E86;
+}
+
+/* --------------------- Ability 1 -------------------------*/
+
+/* Ability 1 Div/Container */
+.ability {
+  position: absolute;
+  top: 62%;
+  height: 20%;
+  background: #968E86;
+  border: 1px black solid;
+  border-radius: 30%;
+  text-align: center;
+  width: 100%;
+  left:0;
+  right:0;
+  margin-top:1vh;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.ability1:hover {
+  background: rgb(126, 121, 117);
+}
+
+/* The Minion's Attack Name 1 */
+.minionAttack1 {
+  font-size: 2.5vh;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  line-height: 5vh;
+  font-family: 'ZCOOL KuaiLe', cursive;
+
+}
+
+/* The Minion's Attack Damage 1 */
+.minionAttack1Power {
+  font-size: 3vh;
+  color: rgb(226, 213, 30);
+  margin-right: 2vh;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: 'ZCOOL KuaiLe', cursive;
+
+}
+
+/* The Minion's Attack Cost 1 */
+.minionAttack1Cost {
+  font-size: 3vh;
+  color: rgb(10, 14, 233);
+  text-shadow: 2px 2px 4px #f8f6f6;
+  font-weight: bold;
+  font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+
+.minionContainer {
+  background:
+    radial-gradient(circle farthest-side at 0% 50%, rgb(207, 170, 89) 23.5%, rgba(240, 166, 17, 0) 0)21px 30px,
+    radial-gradient(circle farthest-side at 0% 50%, #B71 24%, rgba(240, 166, 17, 0) 0)19px 30px,
+    linear-gradient(rgb(207, 170, 89) 14%, rgba(240, 166, 17, 0) 0, rgba(240, 166, 17, 0) 85%, rgb(207, 170, 89) 0)0 0,
+    linear-gradient(150deg, rgb(207, 170, 89) 24%, #B71 0, #B71 26%, rgba(240, 166, 17, 0) 0, rgba(240, 166, 17, 0) 74%, #B71 0, #B71 76%, rgb(207, 170, 89) 0)0 0,
+    linear-gradient(30deg, rgb(207, 170, 89) 24%, #B71 0, #B71 26%, rgba(240, 166, 17, 0) 0, rgba(240, 166, 17, 0) 74%, #B71 0, #B71 76%, rgb(207, 170, 89) 0)0 0,
+    linear-gradient(90deg, #B71 2%, rgb(207, 170, 89) 0, rgb(207, 170, 89) 98%, #B71 0%)0 0 rgb(207, 170, 89);
+  background-size: 40px 60px;
+  border: 1vh rgb(163, 122, 61);
+  border-style: outset;
+  display: flex;
+  width: 60%;
+  padding-right: 1vw;
+  margin-left: 1vw;
+  height: 65vh;
+  flex-shrink:0;
+  overflow-y: scroll;
+
+}
+
+
+
+.minionHeader {
+  text-align: center;
+  background-image: radial-gradient(circle, rgb(207, 170, 89), #cab09b, rgb(207, 170, 89));
+  border: 1vh rgb(163, 122, 61);
+  border-style: outset;
+  border-radius: 20%;
+  width:33%;
+  height: 15vh;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+  position:absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.subText {
+  line-height: 60%;
+  font-family: 'ZCOOL KuaiLe', cursive;
+  font-size: 100%;
+  margin-top:-.5vh;
+}
+
+.headerText {
+  line-height: 60%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 200%;
+}
+
+.chosenMinion {
+  height: 65vh;
+  width: 20%;
+
+  border: 1vh rgb(163, 122, 61);
+  border-style: outset;
+  text-align: center;
+  float: right;
+  margin-right: 1vw;
+  margin-left: 1vw;
+  background:
+    radial-gradient(circle farthest-side at 0% 50%, rgb(207, 170, 89) 23.5%, rgba(240, 166, 17, 0) 0)21px 30px,
+    radial-gradient(circle farthest-side at 0% 50%, #B71 24%, rgba(240, 166, 17, 0) 0)19px 30px,
+    linear-gradient(rgb(207, 170, 89) 14%, rgba(240, 166, 17, 0) 0, rgba(240, 166, 17, 0) 85%, rgb(207, 170, 89) 0)0 0,
+    linear-gradient(150deg, rgb(207, 170, 89) 24%, #B71 0, #B71 26%, rgba(240, 166, 17, 0) 0, rgba(240, 166, 17, 0) 74%, #B71 0, #B71 76%, rgb(207, 170, 89) 0)0 0,
+    linear-gradient(30deg, rgb(207, 170, 89) 24%, #B71 0, #B71 26%, rgba(240, 166, 17, 0) 0, rgba(240, 166, 17, 0) 74%, #B71 0, #B71 76%, rgb(207, 170, 89) 0)0 0,
+    linear-gradient(90deg, #B71 2%, rgb(207, 170, 89) 0, rgb(207, 170, 89) 98%, #B71 0%)0 0 rgb(207, 170, 89);
+  background-size: 40px 60px;
+  overflow-y: scroll;
+}
+
+
+
+.chosenText {
+  height: 10%;
+  display: block;
+}
+
+.row2 {
+  height: 100vh;
+  margin-top: 5vh;
+}
+
+.container {
+  background-image: url("chooseBackground.gif");
+  background-color: rgb(110, 63, 0);
+  background-repeat: no-repeat;
+  height: 100%;
+  padding-top: .1%;
+}
+
+.chosenMinionCard {
+  width: 80%;
+  margin: 10%;
+  border: 1vh rgb(163, 122, 61);
+  border-style: outset;
+  background-image: radial-gradient(circle, #a87046, #cab09b, #776557);
+  border-radius:20%;
+  background-blend-mode: lighten
+}
+
+.chosenMinionCard:hover {
+  background: #6e5c4f;
+}
+
+.minionName {
+color:white;
+font-size:1em;
+text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+margin-bottom:none;
+font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.chosenMinionPortrait {
+  border: .2em solid #968E86;
+  border-radius: 100%;
+}

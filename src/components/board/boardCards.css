@@ -1,0 +1,509 @@
+/* -----------------------------------Champion CSS------------------------------- */
+
+.playedChampionCard {
+    transition: transform 0.15s;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+.playedChampionPortrait {
+    position: absolute;
+    width: 8vw;
+    height: 13vh;
+    top:.5vh;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: .2em solid #968E86;
+    border-radius: 30%;
+   
+  }
+
+.playedChampionHealth {
+    position: absolute;
+    padding: .5vh .5vh;
+    width: 2vw;
+    height: 2vh;
+    background: #bc3328;
+    border: .08em solid #968E86;
+    border-radius: 10%;
+    bottom: -5%;
+    left: 0;
+    right: 0;
+    margin-left:auto;
+    margin-right:auto;
+    color: white;
+    text-align:center;
+    font-size:.8rem;
+  }
+
+.playedChampionWeakness {
+  position: absolute;
+  border: .08em solid #968E86;
+  border-radius: 100%;
+  bottom: 1vh;
+  left: 70%;
+  width: 5vh;
+  height: 5vh;
+  background-size: cover;
+  background-position: center;
+  background-color: #968E86;
+}
+
+.playedChampionStrength {
+    position: absolute;
+    border: .08em solid #968E86;
+    border-radius: 100%;
+    bottom: 1vh;
+    right: 70%;
+    width: 5vh;
+    height: 5vh;
+    background-size: cover;
+    background-position: center;
+    background-color: #968E86;
+  }
+
+
+/* -----------------------------------Minion in hand CSS------------------------------------------   */
+
+
+/* -----------------------------------Side A Card-------------------------------- */
+.minionHandCardA {
+    /* background: #776557; */
+    transition: transform 0.15s;
+    position: relative;
+    width: 35vh;
+    height: 47vh;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    border: 1vh rgb(163, 122, 61);
+    border-style: outset;
+    background-image: radial-gradient(circle, #a87046, #cab09b, #776557);
+    display: inline-flex;
+    transform: scale(0.4);
+  
+  
+    /* Remove this margin! only for testing */
+    margin-top:-13.5vh;
+    margin-right:-13vw;
+  }
+  
+  .minionHandCardA:hover {
+    background: #6e5c4f;
+    transform: translateY(20vh);
+    z-index:6;
+    margin:none;
+  }
+
+/* -----------------------------------Side B Card-------------------------------- */
+
+.minionHandCardB {
+    /* background: #776557; */
+    transition: transform 0.15s;
+    position: relative;
+    width: 35vh;
+    height: 47vh;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    border: 1vh rgb(163, 122, 61);
+    border-style: outset;
+    background-image: radial-gradient(circle, #a87046, #cab09b, #776557);
+    display: inline-flex;
+    transform: scale(0.4);
+  
+  
+    /* Remove this margin! only for testing */
+    margin-top:-13.5vh;
+    margin-right:-13vw;
+  }
+  
+  .minionHandCardB:hover {
+    background: #6e5c4f;
+    transform: translateY(-20vh);
+    z-index:6;
+    margin:none;
+  }
+
+
+
+  /* The Minion's Name Banner */
+  .MinionHandName {
+    position: absolute;
+    width: 100%;
+    top: 42%;
+    background: #D4B48F;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    line-height: 6vh;
+    color: #ffffff;
+    box-sizing: border-box;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    height: 12%;
+    border-radius: 15%;
+    border-style: double;
+    border: 2vh rgb(163, 122, 61);
+  }
+  
+  /* The Minions Portrait */
+  .minionHandPortrait {
+    position: absolute;
+    top: 5px;
+    left: 12%;
+    width: 70%;
+    height: 55%;
+    border: 4px solid #968E86;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* The Minion's Play Cost Orb */
+  .minionHandCost {
+    position: absolute;
+    background: #968E86;
+    border: 4px solid #968E86;
+    border-radius: 100%;
+    bottom: -8%;
+    left: -10%;
+    color: white;
+  }
+  
+  /* The Minions Health Orb */
+  .minionHandHealth {
+    position: absolute;
+    padding: 2.5vh 3vh;
+    background: #bc3328;
+    border: 4px solid #968E86;
+    border-radius: 100%;
+    bottom: -5vh;
+    right: -3vh;
+    color: white;
+  }
+  
+  
+  
+  
+  
+  /* The Minions Strength Orb */
+  .minionHandStrength {
+    position: absolute;
+    border: 2px solid #968E86;
+    border-radius: 100%;
+    bottom: -3vh;
+    right: 9vh;
+    width: 6vh;
+    height: 6vh;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    padding-left: -1vh;
+    background-color: #968E86;
+  }
+  
+  /* The Minions Weakness Orb */
+  .minionHandWeakness {
+    position: absolute;
+    border: 2px solid #968E86;
+    border-radius: 100%;
+    bottom: -3vh;
+    left: 9vh;
+    width: 6vh;
+    height: 6vh;
+    background-size: cover;
+    background-position: center;
+    background-color: #968E86;
+  }
+  
+  
+  /* Ability 1 Div/Container */
+  .ability {
+    position: absolute;
+    width: 96%;
+    top: 62%;
+    height: 20%;
+    background: #968E86;
+    border: 1px black solid;
+    border-radius: 30%;
+    text-align: center;
+  }
+  
+  .ability1:hover {
+    background: rgb(126, 121, 117);
+  }
+  
+  /* The Minion's Attack Name 1 */
+  .minionHandAttack1 {
+    font-size: 2.5vh;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    line-height: 5vh;
+  
+  }
+  
+  /* The Minion's Attack Damage 1 */
+  .minionHandAttack1Power {
+    font-size: 3vh;
+    color: rgb(226, 213, 30);
+    margin-right: 2vh;
+    text-shadow: 2px 2px 4px #000000;
+  
+  }
+  
+  /* The Minion's Attack Cost 1 */
+  .minionHandAttack1Cost {
+    font-size: 3vh;
+    color: rgb(10, 14, 233);
+    text-shadow: 2px 2px 4px #f8f6f6;
+    font-weight: bold;
+  }
+  
+
+
+/* -------------------------------------Minion in field CSS---------------------------------- */
+
+.minionFieldCardA {
+    /* background: #776557; */
+    transition: transform 0.15s;
+    position: relative;
+    width: 35vh;
+    height: 40vh;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+    border: 1vh rgb(163, 122, 61);
+    border-style: outset;
+    background-image: radial-gradient(circle, #a87046, #cab09b, #776557);
+    display: inline-flex;
+    transform: scale(0.4);
+    z-index:5;
+  
+  
+    /* Remove this margin! only for testing */
+    margin-top: -9.5vh;
+    margin-right: -4vw;
+}
+
+  .minionFieldCardB {
+    /* background: #776557; */
+    transition: transform 0.15s;
+    position: relative;
+    width: 35vh;
+    height: 40vh;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+    border: 1vh rgb(163, 122, 61);
+    border-style: outset;
+    background-image: radial-gradient(circle, #a87046, #cab09b, #776557);
+    display: inline-flex;
+    transform: scale(0.4);
+    z-index:5;
+  
+  
+    /* Remove this margin! only for testing */
+    margin-top:-11.5vh;
+    margin-right: -4vw;
+  }
+  
+  .minionFieldCardA:hover {
+    background: #6e5c4f;
+    transform: scale(.7);
+    z-index:1;
+  }
+  
+  .minionFieldCardB:hover {
+    background: #6e5c4f;
+    transform: scale(.9);
+    z-index:1;
+  } 
+
+  
+  /* The Minion's Name Banner */
+  .MinionFieldName {
+    position: absolute;
+    width: 100%;
+    top: 42%;
+    background: #D4B48F;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    line-height: 6vh;
+    color: #ffffff;
+    box-sizing: border-box;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    height: 12%;
+    border-radius: 15%;
+    border-style: double;
+    border: 2vh rgb(163, 122, 61);
+  }
+  
+  /* The Minions Portrait */
+  .minionFieldPortrait {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    right: 0;
+    margin-left:auto;
+    margin-right:auto;
+    width: 70%;
+    height: 65%;
+    border: 4px solid #968E86;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* The Minion's Play Cost Orb */
+  .minionFieldCost {
+    position: absolute;
+    background: #968E86;
+    border: 4px solid #968E86;
+    border-radius: 100%;
+    bottom: -9%;
+    left: -10%;
+    color: white;
+  }
+  
+  /* The Minions Health Orb */
+  .minionFieldHealth {
+    position: absolute;
+    padding: 2.5vh 3vh;
+    background: #bc3328;
+    border: 4px solid #968E86;
+    border-radius: 100%;
+    bottom: 28%;
+    left:85%;
+    color: white;
+    z-index:2;
+  }
+  
+  
+  
+  
+  
+  /* The Minions Strength Orb */
+  .minionFieldStrength {
+    position: absolute;
+    border: 2px solid #968E86;
+    border-radius: 100%;
+    bottom: -3vh;
+    right: 9vh;
+    width: 6vh;
+    height: 6vh;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    padding-left: -1vh;
+    background-color: #968E86;
+  }
+  
+  /* The Minions Weakness Orb */
+  .minionFieldWeakness {
+    position: absolute;
+    border: 2px solid #968E86;
+    border-radius: 100%;
+    bottom: -3vh;
+    left: 9vh;
+    width: 6vh;
+    height: 6vh;
+    background-size: cover;
+    background-position: center;
+    background-color: #968E86;
+  }
+  
+  
+  /* Ability 1 Div/Container */
+  .abilityField {
+    position: absolute;
+    width: 70%;
+    top: 62%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    height: 20%;
+    background: #968E86;
+    border: 1px black solid;
+    border-radius: 30%;
+    text-align: center;
+    z-index:1;
+  }
+  
+  .ability1:hover {
+    background: rgb(126, 121, 117);
+  }
+  
+  /* The Minion's Attack Name 1 */
+  .minionFieldAttack1 {
+    font-size: 2.5vh;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    line-height: 5vh;
+  
+  }
+  
+  /* The Minion's Attack Damage 1 */
+  .minionFieldAttack1Power {
+    font-size: 3vh;
+    color: rgb(226, 213, 30);
+    margin-right: 2vh;
+    text-shadow: 2px 2px 4px #000000;
+  
+  
+  }
+  
+  /* The Minion's Attack Cost 1 */
+  .minionFieldAttack1Cost {
+    font-size: 3vh;
+    color: rgb(10, 14, 233);
+    text-shadow: 2px 2px 4px #f8f6f6;
+    font-weight: bold;
+  }
+
+  .droppableMinion {
+    display: block;
+  }
+ 
+/*  ---------------------------------------------Card Animation -----------------------------*/
+
+
+
+ /* .minionFieldCardB:hover {
+	-webkit-animation: minionFieldCardB 0.65s linear both;
+	        animation: minionFieldCardB 0.65s linear both;
+}
+@-webkit-keyframes minionFieldCardB {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(0.5) rotateZ(180deg);
+            transform: scale(0.5) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes minionFieldCardB {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(0.5) rotateZ(180deg);
+            transform: scale(0.5) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+} */
